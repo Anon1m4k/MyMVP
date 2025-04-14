@@ -34,7 +34,7 @@
             this.Clear = new System.Windows.Forms.Button();
             this.ComboBoxFiltr = new System.Windows.Forms.ComboBox();
             this.ButtonRemove = new System.Windows.Forms.Button();
-            this.Card = new UserCard.UserControl1();
+            this.Card = new UserCard.UserControl();
             ((System.ComponentModel.ISupportInitialize)(this.UsersList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,6 +46,7 @@
             this.UsersList.BackgroundColor = System.Drawing.SystemColors.ControlDark;
             this.UsersList.Location = new System.Drawing.Point(29, 38);
             this.UsersList.Name = "UsersList";
+            this.UsersList.ReadOnly = true;
             this.UsersList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.UsersList.Size = new System.Drawing.Size(768, 207);
             this.UsersList.TabIndex = 0;
@@ -134,7 +135,7 @@
         private System.Windows.Forms.Button NameFiltr;
         private System.Windows.Forms.Button Clear;
         private System.Windows.Forms.ComboBox ComboBoxFiltr;
-        private UserCard.UserControl1 Card;
+        private UserCard.UserControl Card;
         private System.Windows.Forms.Button ButtonRemove;
     }
 }

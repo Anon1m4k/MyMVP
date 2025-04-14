@@ -15,11 +15,11 @@ using MyLib.Models;
 
 namespace UserCard
 {
-    public partial class UserControl1: UserControl, IUserCard
+    public partial class UserControl: System.Windows.Forms.UserControl, IUserCard
     {
         private string login_;
         
-        public UserControl1()
+        public UserControl()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace UserCard
 {
-    partial class UserControl1
+    partial class UserControl
     {
         /// <summary>
         /// Обязательная переменная конструктора.

@@ -12,19 +12,21 @@ namespace MyLib.Presenters
 {
     public class UsersPresenter
     {
-        private IUsersModel model_;
-        private IUsersView view_;
-        private IUserCard card_;
-        public UsersPresenter(IUsersModel model, IUsersView view, IUserCard card)
+        private IUsersModel model_; //Модель данных
+        private IUsersView view_; //Представление
+        private IUserCard card_; //Компонент карточки пользователя
+        public UsersPresenter(IUsersModel model, IUsersView view, IUserCard card) //Конструктор инициализирует зависимости
         {
+            // 1. Инициализация полей
             model_ = model;
             view_ = view;
             card_ = card;
 
-            model_.SuccessLoadedInfoUsers += Model__SuccessLoadedInfoUsers;
-            model_.LoadInfoUsers();
+            model_.SuccessLoadedInfoUsers += Model__SuccessLoadedInfoUsers; //Подписка на событие успешной загрузки данных из модели
 
-            card_.Redact += Card__Redact;
+            model_.LoadInfoUsers(); //Первичная загрузка данных
+
+            card_.Redact += Card__Redact; //Подписка на событие редактирования в карточке
         }
         private void Card__Redact(User obj)
         {
@@ -49,8 +51,7 @@ namespace MyLib.Presenters
                 return;
             }
             User u = model_.GetUsers()[row];
-            card_.Show(u);
-                   
+            card_.Show(u);          
         }
         public void Model__DeleteUser()
         {

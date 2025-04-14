@@ -81,7 +81,7 @@ namespace MyLib.Models
         }
         public void ChangeUser(User obj)
         {
-            for (int index = 0; index < _users.Count;++index)
+            for (int index = 0; index < _users.Count; ++index)
             {
                 User user = _users.ElementAt(index);
                 if (obj.Login == user.Login)
