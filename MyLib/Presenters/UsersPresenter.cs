@@ -28,7 +28,7 @@ namespace MyLib.Presenters
         }
         private void Card__Redact(User obj)
         {
-            model_.UserCard__Redact(obj);
+            model_.ChangeUser(obj);
         }
         public void View__FiltrEvent(string FiltrOrder, string input)
         {
@@ -44,9 +44,12 @@ namespace MyLib.Presenters
         }
         public void SelectUser(int row)
         {
-            
-                User u = model_.GetUsers()[row];
-                card_.Show(u);
+            if (row < 0 || row >= model_.GetUsers().Count)
+            {
+                return;
+            }
+            User u = model_.GetUsers()[row];
+            card_.Show(u);
                    
         }
         public void Model__DeleteUser()
@@ -57,7 +60,7 @@ namespace MyLib.Presenters
                 return;
             }
             User u = model_.GetUsers()[delIndex];
-            model_.DeleteUser(u.Password);
+            model_.DeleteUser(u.Id);
         }
     }
 }

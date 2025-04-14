@@ -42,30 +42,30 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Location = new System.Drawing.Point(77, 65);
+            this.pictureBox1.Location = new System.Drawing.Point(49, 27);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 95);
+            this.pictureBox1.Size = new System.Drawing.Size(176, 169);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(292, 65);
+            this.textBoxName.Location = new System.Drawing.Point(277, 33);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(100, 20);
             this.textBoxName.TabIndex = 1;
             // 
             // textBoxSurname
             // 
-            this.textBoxSurname.Location = new System.Drawing.Point(292, 103);
+            this.textBoxSurname.Location = new System.Drawing.Point(277, 71);
             this.textBoxSurname.Name = "textBoxSurname";
             this.textBoxSurname.Size = new System.Drawing.Size(100, 20);
             this.textBoxSurname.TabIndex = 2;
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(292, 140);
+            this.textBoxEmail.Location = new System.Drawing.Point(276, 108);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(100, 20);
             this.textBoxEmail.TabIndex = 3;
@@ -73,7 +73,7 @@
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(289, 49);
+            this.label.Location = new System.Drawing.Point(274, 17);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(35, 13);
             this.label.TabIndex = 4;
@@ -81,18 +81,18 @@
             // 
             // buttonRedact
             // 
-            this.buttonRedact.Location = new System.Drawing.Point(77, 202);
+            this.buttonRedact.Location = new System.Drawing.Point(276, 134);
             this.buttonRedact.Name = "buttonRedact";
-            this.buttonRedact.Size = new System.Drawing.Size(100, 23);
+            this.buttonRedact.Size = new System.Drawing.Size(101, 75);
             this.buttonRedact.TabIndex = 5;
-            this.buttonRedact.Text = "Редактировать";
+            this.buttonRedact.Text = "Редактировать пользователя";
             this.buttonRedact.UseVisualStyleBackColor = true;
             this.buttonRedact.Click += new System.EventHandler(this.buttonRedact_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(288, 87);
+            this.label1.Location = new System.Drawing.Point(274, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 6;
@@ -101,7 +101,7 @@
             // Email
             // 
             this.Email.AutoSize = true;
-            this.Email.Location = new System.Drawing.Point(290, 124);
+            this.Email.Location = new System.Drawing.Point(274, 94);
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(32, 13);
             this.Email.TabIndex = 7;
@@ -120,7 +120,7 @@
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.pictureBox1);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(432, 255);
+            this.Size = new System.Drawing.Size(432, 237);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

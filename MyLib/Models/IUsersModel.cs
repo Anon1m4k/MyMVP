@@ -12,7 +12,7 @@ namespace MyLib.Models
         List<User> ReturnUsers();
         List<User> GetUsers();
         void FiltrUserData(string NameFiltr, string input);
-        void UserCard__Redact(User obj);
+        void ChangeUser(User obj);
         void DeleteUser(int del);
 
         event Action SuccessLoadedInfoUsers;

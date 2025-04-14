@@ -41,7 +41,7 @@ namespace MyMVP
             {
                 presenter_.Model__DeleteUser();
             }
-            else if (DialogRes == DialogResult.No) { }
+            else if (DialogRes == DialogResult.No) {}
         }
         public int GetSelectedUserIndex()
         {

@@ -33,42 +33,46 @@
             this.NameFiltr = new System.Windows.Forms.Button();
             this.Clear = new System.Windows.Forms.Button();
             this.ComboBoxFiltr = new System.Windows.Forms.ComboBox();
-            this.Card = new UserCard.UserControl1();
             this.ButtonRemove = new System.Windows.Forms.Button();
+            this.Card = new UserCard.UserControl1();
             ((System.ComponentModel.ISupportInitialize)(this.UsersList)).BeginInit();
             this.SuspendLayout();
             // 
             // UsersList
             // 
+            this.UsersList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.UsersList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.UsersList.BackgroundColor = System.Drawing.SystemColors.ControlDark;
             this.UsersList.Location = new System.Drawing.Point(29, 38);
             this.UsersList.Name = "UsersList";
             this.UsersList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.UsersList.Size = new System.Drawing.Size(750, 207);
+            this.UsersList.Size = new System.Drawing.Size(768, 207);
             this.UsersList.TabIndex = 0;
             this.UsersList.SelectionChanged += new System.EventHandler(this.UsersList_SelectionChanged);
             // 
             // NameTextBox
             // 
-            this.NameTextBox.Location = new System.Drawing.Point(29, 267);
+            this.NameTextBox.Location = new System.Drawing.Point(272, 262);
             this.NameTextBox.Name = "NameTextBox";
             this.NameTextBox.Size = new System.Drawing.Size(100, 20);
             this.NameTextBox.TabIndex = 1;
             // 
             // NameFiltr
             // 
-            this.NameFiltr.Location = new System.Drawing.Point(135, 265);
+            this.NameFiltr.Location = new System.Drawing.Point(29, 251);
             this.NameFiltr.Name = "NameFiltr";
-            this.NameFiltr.Size = new System.Drawing.Size(94, 23);
+            this.NameFiltr.Size = new System.Drawing.Size(110, 39);
             this.NameFiltr.TabIndex = 2;
-            this.NameFiltr.Text = "Отфильтровать";
+            this.NameFiltr.Text = "Отфильтровать по";
             this.NameFiltr.UseVisualStyleBackColor = true;
             this.NameFiltr.Click += new System.EventHandler(this.NameFiltr_Click);
             // 
             // Clear
             // 
-            this.Clear.Location = new System.Drawing.Point(235, 265);
+            this.Clear.Location = new System.Drawing.Point(29, 294);
             this.Clear.Name = "Clear";
-            this.Clear.Size = new System.Drawing.Size(75, 23);
+            this.Clear.Size = new System.Drawing.Size(110, 40);
             this.Clear.TabIndex = 3;
             this.Clear.Text = "Сбросить";
             this.Clear.UseVisualStyleBackColor = true;
@@ -78,35 +82,36 @@
             // 
             this.ComboBoxFiltr.FormattingEnabled = true;
             this.ComboBoxFiltr.Items.AddRange(new object[] {
-            "Имя",
-            "Логин"});
-            this.ComboBoxFiltr.Location = new System.Drawing.Point(408, 265);
+            "имени",
+            "логину"});
+            this.ComboBoxFiltr.Location = new System.Drawing.Point(145, 261);
             this.ComboBoxFiltr.Name = "ComboBoxFiltr";
             this.ComboBoxFiltr.Size = new System.Drawing.Size(121, 21);
             this.ComboBoxFiltr.TabIndex = 4;
             // 
-            // Card
-            // 
-            this.Card.Location = new System.Drawing.Point(29, 307);
-            this.Card.Name = "Card";
-            this.Card.Size = new System.Drawing.Size(432, 255);
-            this.Card.TabIndex = 5;
-            // 
             // ButtonRemove
             // 
-            this.ButtonRemove.Location = new System.Drawing.Point(235, 509);
+            this.ButtonRemove.Location = new System.Drawing.Point(29, 340);
             this.ButtonRemove.Name = "ButtonRemove";
-            this.ButtonRemove.Size = new System.Drawing.Size(75, 23);
+            this.ButtonRemove.Size = new System.Drawing.Size(343, 50);
             this.ButtonRemove.TabIndex = 6;
-            this.ButtonRemove.Text = "Удалить";
+            this.ButtonRemove.Text = "Удалить пользователя";
             this.ButtonRemove.UseVisualStyleBackColor = true;
             this.ButtonRemove.Click += new System.EventHandler(this.ButtonRemove_Click);
+            // 
+            // Card
+            // 
+            this.Card.Location = new System.Drawing.Point(378, 267);
+            this.Card.Name = "Card";
+            this.Card.Size = new System.Drawing.Size(416, 257);
+            this.Card.TabIndex = 5;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 584);
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.ClientSize = new System.Drawing.Size(818, 536);
             this.Controls.Add(this.ButtonRemove);
             this.Controls.Add(this.Card);
             this.Controls.Add(this.ComboBoxFiltr);

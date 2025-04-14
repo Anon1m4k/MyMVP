@@ -31,7 +31,7 @@ namespace UserCard
             textBoxEmail.Text = u.Email;
             login_ = u.Login;
 
-            pictureBox1.Image= Image.FromFile(u.Path);
+            pictureBox1.Image = Image.FromFile(u.Path);
         }
         private void buttonRedact_Click(object sender, EventArgs e)
         {
