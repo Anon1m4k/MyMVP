@@ -28,6 +28,7 @@ namespace MyMVP
         private void Clear_Click(object sender, EventArgs e)
         {
             presenter_.Model__RefreshLoadedInfoUsers();
+            NameTextBox.Clear();
         }
         private void UsersList_SelectionChanged(object sender, EventArgs e)
         {
@@ -41,11 +42,15 @@ namespace MyMVP
             {
                 presenter_.Model__DeleteUser();
             }
-            else if (DialogRes == DialogResult.No) {}
+           // else if (DialogRes == DialogResult.No) {}
         }
         public int GetSelectedUserIndex()
         {
-            return UsersList.CurrentCell.RowIndex;
+            if (UsersList.CurrentCell != null)
+            {
+                return UsersList.CurrentCell.RowIndex;
+            }
+            return 0;
         }
     }
 }
